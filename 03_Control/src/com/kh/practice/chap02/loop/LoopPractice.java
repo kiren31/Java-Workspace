@@ -97,7 +97,7 @@ public class LoopPractice {
 		// practice4();
 		// }else {
 		//		if(num1 <= num2){
-		//			for(int i= num1; i <= num2; i++) {
+		//			for(int i = num1; i <= num2; i++) {
 		//				System.out.print(i+" ");
 		//			}
 		//		}else {

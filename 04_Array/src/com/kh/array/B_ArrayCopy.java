@@ -39,7 +39,8 @@ public class B_ArrayCopy {
 		System.out.println("복사본 해시코드"+copy.hashCode());
 		
 	}
-
+	
+	// 깊은복사 첫번째
 	public void method2() {
 		
 		// 1. for 문 방법(수작업)

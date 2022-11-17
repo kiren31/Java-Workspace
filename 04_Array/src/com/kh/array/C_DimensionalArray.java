@@ -77,7 +77,7 @@ public class C_DimensionalArray {
 		// 일차원 배열 선언 및 할당과 동시에 초기화
 		int[] arr = { 1, 2, 3, 4, 5 };
 
-		// 이차원 배열 선언 및 할당과 동시에 초기화
+		// 이차원 배열 선언 및 할당과 동시에 초기화(대입)
 		int[][] arr2 = { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } }; // [3][5]
 
 		for (int i = 0; i < arr2.length; i++) {
@@ -91,10 +91,13 @@ public class C_DimensionalArray {
 	public void method4() {
 
 		/*
-		 * 가변 배열 행의 크기는 정해져 있으나 각각의 행별로 열의 갯수가 정해져 있지 않은 상태 이차원배열 == 일차원배열을 여러개 묶은 형태 즉,
-		 * 묶여있는 일차원배열의 길이가 꼭 같을 필요는 없다.
+		 * 가변 배열 
+		 * 행의 크기는 정해져 있으나 각각의 행별로 열의 갯수가 정해져 있지 않은 상태 
+		 * 이차원배열 == 일차원배열을 여러개 묶은 형태 
+		 * 즉, 묶여있는 일차원배열의 길이가 꼭 같을 필요는 없다.
 		 * 
-		 * 단, 행크기는 생략이 불가, 반드시 지정해야함. 열 크기는 생략이 가능하다. 각 행의 열의 길이가 변경 가능함.
+		 * 단, 행크기는 생략이 불가, 반드시 지정해야함. 
+		 * 열 크기는 생략이 가능하다. 각 행의 열의 길이가 변경 가능함.
 		 * 
 		 */
 		int[][] arr = new int[3][]; // 가변 배열(행의 크기는 3행)
@@ -178,16 +181,19 @@ public class C_DimensionalArray {
 		int[][] arr = new int[2][3];
 
 		for (int i = 0; i < arr.length; i++) {
-			if (i == 0) {
-				System.out.print("국어점수를 입력하세요 : ");
-			} else {
-				System.out.print("영어점수를 입력하세요 : ");
-			}
 			for (int j = 0; j < arr[i].length; j++) {
-				arr[i][j] = //내가입력한값;
+				System.out.printf("%s점수를 입력하세요 : ", i == 0 ? "국어" : "영어");
+				arr[i][j] = sc.nextInt();
 			}
 		}
-		System.out.printf("xx점수: xx xx xx");
+		
+		for (int i = 0; i < arr.length; i++) {
+			System.out.printf("%s점수 : ", i == 0 ? "국어" : "영어");
+			for (int j = 0; j < arr[i].length; j++) {
+				System.out.print(arr[i][j]+" ");
+			}
+			System.out.println();
+		}
 	}
 
-}
+	}

@@ -53,7 +53,7 @@ public class Student {
 	
 	// 데이터를 반환해주는 기능의 메소드 : getter 메소두
 	// name필드에 담긴 값을 돌려주는 용도의 메소드
-	// get + 필드명(카밀케이스 적용)
+	// get + 필드명(카멜케이스 적용)
 	public String getName() { //void : 반환하는 값이 없을경우에 작성
 		
 		return name; // return 반환값; -> 반환값을 나를 호출한 메서드의 위치에 전달하겠다.

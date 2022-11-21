@@ -8,6 +8,15 @@ public class Student {
 	private double height;
 	private char gender;
 	
+	{
+		grade = 3;
+		classroom = 15;
+		name = "이해민";
+		height = 180.5;
+		gender = '남';
+		
+	}
+	
 public Student() {
 	
 }
@@ -23,22 +32,16 @@ public void setName(String name) {
 	this.name = name;
 }
 
-{
-	
-}
 
 public void setHeight(double height) {
 	this.height = height;	
 }
 
-{
 	
-}
 public void setGender(char gender) {
 	this.gender = gender;
-	{
 		
-	}
+
 }
 // getter 메서드 3개
 	public int getGrade() {
@@ -62,7 +65,8 @@ public void setGender(char gender) {
 	}
 	
 	public void information() {
-		return;
+		
+	  System.out.printf("%s 학생은 %d학년이고 %d반이며, 키는 %.1fcm이고 %c학생입니다.",name,grade,classroom,height,gender);
 	
 	
 	}

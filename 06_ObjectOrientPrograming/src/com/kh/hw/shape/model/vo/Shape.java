@@ -29,6 +29,10 @@ public class Shape {
 		this.width = width;
 	}
 	
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
 	public int getType() {
 		return type;
 	}
@@ -41,8 +45,12 @@ public class Shape {
 		return width;
 	}
 	
+	public String getColor() {
+		return color;
+	}
+	
 	public String information() {
-		return height+" "+width+" "+color;
+		return  height+" "+width+" "+color;
 	}
 	
 	

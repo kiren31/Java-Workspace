@@ -4,20 +4,20 @@ public class Member {
 	private String name;
 	private int age;
 	private char gender;
-	private int couponCount;
-	
+	private int couponCount = 0;
+
 	public Member() {
 		super();
 	}
 
-	public Member(String name, int age, char gender) {
+	public Member(String name, int age, char gender, int couponCount) {
 		super();
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
+		this.couponCount = couponCount;
 	}
 
-	
 	public String getName() {
 		return name;
 	}
@@ -42,7 +42,6 @@ public class Member {
 		this.gender = gender;
 	}
 
-	
 	public int getCouponCount() {
 		return couponCount;
 	}
@@ -53,13 +52,7 @@ public class Member {
 
 	@Override
 	public String toString() {
-		return "Member [name=" + name + ", age=" + age + ", gender=" + gender + "]";
+		return "Member [name=" + name + ", age=" + age + ", gender=" + gender + ", couponCount=" + couponCount + "]";
 	}
-	
-
-	
-	
-	
-	
 
 }

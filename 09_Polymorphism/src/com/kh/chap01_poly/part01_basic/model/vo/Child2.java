@@ -1,16 +1,15 @@
 package com.kh.chap01_poly.part01_basic.model.vo;
 
-public class Child2 extends Parent {
-
+public class Child2 extends Parent{
+	
 	private int n;
 
 	public Child2() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Child2(int x, int y, int n) {
-		super(x, y);
+		super(x , y );
 		this.n = n;
 	}
 
@@ -33,9 +32,18 @@ public class Child2 extends Parent {
 	
 	@Override
 	public void print() {
-		System.out.println("두번재 자식");
-	
+		System.out.println("두번째 자식");
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 }

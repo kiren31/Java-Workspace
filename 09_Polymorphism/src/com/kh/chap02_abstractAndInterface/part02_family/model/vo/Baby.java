@@ -1,6 +1,6 @@
 package com.kh.chap02_abstractAndInterface.part02_family.model.vo;
 
-public class Baby extends Person implements Basic {
+public class Baby extends Person implements Basic{
 
 	public Baby() {
 		
@@ -16,18 +16,23 @@ public class Baby extends Person implements Basic {
 	}
 	
 	
+	// eat -> 몸무게 3증가, 건강도 1 증가
+	@Override
 	public void eat() {
+		//몸무게3증가
+		super.setWeight( super.getWeight() + 3);
 		
-		super.setWeight(super.getWeight()+ 3 ); 
-		
-		super.setHealth(super.getHealth()+ 1 ); 
-		
+		//건강도 1증가
+		super.setHealth( super.getHealth() + 1);
+	}
+	// sleep -> 건강도 3증가
+	@Override
+	public void sleep() {
+		super.setHealth( super.getHealth() + 3);
 	}
 	
-	public void sleep() {
-		
-		super.setHealth(super.getHealth() + 3 );
-	}
+	
+	
 	
 	
 	

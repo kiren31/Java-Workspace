@@ -6,14 +6,13 @@ public class CookBook extends Book {
 
 	public CookBook() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	public CookBook(String title, String author, String publisher, boolean coupon) {
 		super(title, author, publisher);
 		this.coupon = coupon;
 	}
-	
-	
 
 	public boolean isCoupon() {
 		return coupon;
@@ -23,17 +22,9 @@ public class CookBook extends Book {
 		this.coupon = coupon;
 	}
 
-	
 	@Override
 	public String toString() {
 		return "CookBook [coupon=" + coupon + ", toString()=" + super.toString() + "]";
 	}
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

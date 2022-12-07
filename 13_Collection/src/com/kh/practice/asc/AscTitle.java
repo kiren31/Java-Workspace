@@ -10,7 +10,7 @@ public class AscTitle implements Comparator {
 		Music m1 = (Music) o1;
 		Music m2 = (Music) o2;
 		
-		return m2.getSinger().
+		return m2.getSinger().compareTo(m1.getSinger());
 		
 	}
 }

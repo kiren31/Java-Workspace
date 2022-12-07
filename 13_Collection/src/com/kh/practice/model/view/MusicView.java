@@ -148,6 +148,12 @@ public class MusicView {
 	public void descSinger() {
 		System.out.println("****** 가수 명 내림차순 정렬 ******");
 		System.out.println("정렬 성공");
+		int result = mc.descSinger();
+		if(result > 0) {
+			System.out.println("정렬 성공");
+		}else {
+			System.out.println("정렬 실패");
+		}
 	}
 	
 	
